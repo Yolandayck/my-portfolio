@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #faf7f4;
+  color: #3d3535;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+.mobile-nav {
+  display: none !important;
+}
+
+@media (max-width: 576px) {
+  .desktop-nav {
+    display: none !important;
+  }
+  .mobile-nav {
+    display: inline-flex !important;
+  }
+}
